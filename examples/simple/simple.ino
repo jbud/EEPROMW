@@ -1,4 +1,16 @@
+/**
+ * WARNING: this example recursively re-writes data on your eeprom, 
+ * if left running long enough it WILL eventually wear your eeprom beyond repair...
+ *
+ * Used properly eepromw can increase your eeprom lifetime by 
+ * up to 220x a normal eeprom.
+ *
+ */
+
 #include <EEPROMW.h>
+
+
+
 
 EEPROMW eepromw();
 
