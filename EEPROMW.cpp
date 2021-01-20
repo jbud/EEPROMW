@@ -8,7 +8,7 @@
 #include <EEPROM.h>
 #include "EEPROMW.h"
 
-EEPROMW::EEPROMW(int pin)
+EEPROMW::EEPROMW()
 {
 	init();
 }
