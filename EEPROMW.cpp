@@ -10,7 +10,6 @@
 
 EEPROMW::EEPROMW()
 {
-	init();
 }
 
 void EEPROMW::init()
@@ -95,6 +94,8 @@ uint16_t EEPROMW::writeCount()
     uint8_t y = EEPROM.read(_Writes + 1);
     uint16_t r = x | y << 8;
     return r;
+
+    //return EEPROM.read(_Writes) | EEPROM.read(_Writes + 1) << 8;
 }
 
 void EEPROMW::moveData(uint16_t addr) 

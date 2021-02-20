@@ -17,18 +17,17 @@ class EEPROMW
 {
 public:
     EEPROMW();
-
+    void init();
     byte read();
-    void write(byte v)
+    void write(byte v);
     
 private:
     uint16_t _Current;
     uint16_t _Writes;
-    void init();
     uint16_t currentAddr();
     uint16_t findAddr();
     void configEeprom();
-    uint16_t writeCount()
+    uint16_t writeCount();
     void addWrite();
     void moveData(uint16_t addr);
     void pad(uint16_t addr);
